@@ -6,16 +6,16 @@
 
 ---
 
-## 📚 Table of Contents
+## 📚 Table of Content
 
 - [HTML Interview Questions](#-html-interview-questions)
-- [CSS Interview Questions](#-css-interview-questions) *(Coming Soon)*
-- [JavaScript Interview Questions](#-javascript-interview-questions) *(Coming Soon)*
-- [React Interview Questions](#-react-interview-questions) *(Coming Soon)*
-- [Node.js Interview Questions](#-nodejs-interview-questions) *(Coming Soon)*
-- [Database Interview Questions](#-database-interview-questions) *(Coming Soon)*
-- [System Design Questions](#-system-design-questions) *(Coming Soon)*
-- [AI/ML Interview Questions](#-aiml-interview-questions) *(Coming Soon)*
+- [CSS Interview Questions](#-css-interview-questions) _(Coming Soon)_
+- [JavaScript Interview Questions](#-javascript-interview-questions) _(Coming Soon)_
+- [React Interview Questions](#-react-interview-questions) _(Coming Soon)_
+- [Node.js Interview Questions](#-nodejs-interview-questions) _(Coming Soon)_
+- [Database Interview Questions](#-database-interview-questions) _(Coming Soon)_
+- [System Design Questions](#-system-design-questions) _(Coming Soon)_
+- [AI/ML Interview Questions](#-aiml-interview-questions) _(Coming Soon)_
 
 ---
 
@@ -52,6 +52,7 @@ HTML stands for **HyperText Markup Language**. It is the standard language used 
 **Q2. What is the difference between HTML elements and HTML tags?**
 
 **Answer:**
+
 - **Tag:** A tag is the markup notation, e.g., `<p>` (opening tag) and `</p>` (closing tag).
 - **Element:** An element includes the opening tag, content, and closing tag together.
 
@@ -74,11 +75,11 @@ HTML stands for **HyperText Markup Language**. It is the standard language used 
 
 **Answer:**
 
-| Feature | Block-Level | Inline |
-|--------|-------------|--------|
-| Starts on | New line | Same line |
-| Width | Full width | Content width |
-| Examples | `<div>`, `<p>`, `<h1>`, `<ul>`, `<table>` | `<span>`, `<a>`, `<strong>`, `<img>` |
+| Feature   | Block-Level                               | Inline                               |
+| --------- | ----------------------------------------- | ------------------------------------ |
+| Starts on | New line                                  | Same line                            |
+| Width     | Full width                                | Content width                        |
+| Examples  | `<div>`, `<p>`, `<h1>`, `<ul>`, `<table>` | `<span>`, `<a>`, `<strong>`, `<img>` |
 
 ```html
 <!-- Block: takes full width, new line -->
@@ -93,6 +94,7 @@ HTML stands for **HyperText Markup Language**. It is the standard language used 
 **Q5. What is the difference between `<div>` and `<span>`?**
 
 **Answer:**
+
 - `<div>` is a **block-level** container used for grouping large sections of content.
 - `<span>` is an **inline** container used for styling small parts of text or elements.
 
@@ -122,11 +124,11 @@ Examples: `<br>`, `<hr>`, `<img>`, `<input>`, `<link>`, `<meta>`
 
 **Answer:**
 
-| Feature | `id` | `class` |
-|--------|------|---------|
-| Uniqueness | Must be **unique** on the page | Can be used on **multiple** elements |
-| CSS selector | `#id-name` | `.class-name` |
-| JS usage | `getElementById()` | `getElementsByClassName()` |
+| Feature      | `id`                           | `class`                              |
+| ------------ | ------------------------------ | ------------------------------------ |
+| Uniqueness   | Must be **unique** on the page | Can be used on **multiple** elements |
+| CSS selector | `#id-name`                     | `.class-name`                        |
+| JS usage     | `getElementById()`             | `getElementsByClassName()`           |
 
 ```html
 <h1 id="main-title">Unique Title</h1>
@@ -150,6 +152,7 @@ The `alt` attribute provides **alternative text** for an image if it cannot be d
 **Q9. What is the difference between absolute and relative URLs?**
 
 **Answer:**
+
 - **Absolute URL:** Full URL including protocol and domain. `https://www.example.com/page.html`
 - **Relative URL:** Path relative to the current document. `../images/photo.jpg`
 
@@ -185,6 +188,7 @@ Attributes provide **additional information** about HTML elements. They are plac
 Semantic HTML uses elements that have **meaningful names** that describe their purpose and content, rather than just defining how they look.
 
 **Benefits:**
+
 - ✅ Better **SEO** (search engines understand content structure)
 - ✅ Better **accessibility** (screen readers navigate correctly)
 - ✅ Better **code readability** and maintainability
@@ -207,19 +211,19 @@ Semantic HTML uses elements that have **meaningful names** that describe their p
 
 **Answer:**
 
-| Element | Purpose |
-|---------|---------|
-| `<header>` | Introductory content or navigation links for a section/page |
-| `<nav>` | Navigation links |
-| `<main>` | Dominant content of the `<body>` |
-| `<article>` | Self-contained, independently distributable content |
-| `<section>` | A thematic grouping of content |
-| `<aside>` | Content indirectly related to main content (sidebar) |
-| `<footer>` | Footer of a section or page |
-| `<figure>` | Self-contained content like images with captions |
-| `<figcaption>` | Caption for a `<figure>` element |
-| `<time>` | A specific time or date |
-| `<mark>` | Highlighted/marked text |
+| Element        | Purpose                                                     |
+| -------------- | ----------------------------------------------------------- |
+| `<header>`     | Introductory content or navigation links for a section/page |
+| `<nav>`        | Navigation links                                            |
+| `<main>`       | Dominant content of the `<body>`                            |
+| `<article>`    | Self-contained, independently distributable content         |
+| `<section>`    | A thematic grouping of content                              |
+| `<aside>`      | Content indirectly related to main content (sidebar)        |
+| `<footer>`     | Footer of a section or page                                 |
+| `<figure>`     | Self-contained content like images with captions            |
+| `<figcaption>` | Caption for a `<figure>` element                            |
+| `<time>`       | A specific time or date                                     |
+| `<mark>`       | Highlighted/marked text                                     |
 
 ```html
 <body>
@@ -244,6 +248,7 @@ Semantic HTML uses elements that have **meaningful names** that describe their p
 **Q13. What is the difference between `<article>` and `<section>`?**
 
 **Answer:**
+
 - `<article>` is for **self-contained** content that can stand alone (blog post, news article, forum post).
 - `<section>` is for **thematically grouped** content that is part of a larger whole.
 
@@ -255,12 +260,12 @@ Semantic HTML uses elements that have **meaningful names** that describe their p
 
 **Answer:**
 
-| Tags | Visual Effect | Semantic Meaning |
-|------|---------------|-----------------|
-| `<strong>` | **Bold** | Important, strong importance |
-| `<b>` | **Bold** | Stylistically bold, no semantic meaning |
-| `<em>` | *Italic* | Emphasized text (stress emphasis) |
-| `<i>` | *Italic* | Italic text (technical term, foreign word) |
+| Tags       | Visual Effect | Semantic Meaning                           |
+| ---------- | ------------- | ------------------------------------------ |
+| `<strong>` | **Bold**      | Important, strong importance               |
+| `<b>`      | **Bold**      | Stylistically bold, no semantic meaning    |
+| `<em>`     | _Italic_      | Emphasized text (stress emphasis)          |
+| `<i>`      | _Italic_      | Italic text (technical term, foreign word) |
 
 ---
 
@@ -311,12 +316,12 @@ Semantic HTML uses elements that have **meaningful names** that describe their p
 >
 ```
 
-| Attribute | Description |
-|-----------|-------------|
-| `action` | URL to send form data to |
-| `method` | `GET` (appends to URL) or `POST` (sends in body) |
-| `enctype` | Encoding type; `multipart/form-data` needed for file uploads |
-| `novalidate` | Disables browser's built-in validation |
+| Attribute    | Description                                                  |
+| ------------ | ------------------------------------------------------------ |
+| `action`     | URL to send form data to                                     |
+| `method`     | `GET` (appends to URL) or `POST` (sends in body)             |
+| `enctype`    | Encoding type; `multipart/form-data` needed for file uploads |
+| `novalidate` | Disables browser's built-in validation                       |
 
 ---
 
@@ -324,42 +329,65 @@ Semantic HTML uses elements that have **meaningful names** that describe their p
 
 **Answer:**
 
-| Feature | GET | POST |
-|---------|-----|------|
-| Data location | Appended to URL as query string | Sent in request body |
-| Visibility | Visible in browser URL | Not visible |
-| Security | Less secure | More secure |
-| Data size | Limited (~2048 chars) | No practical limit |
-| Use case | Search, filtering | Login, file upload, sensitive data |
+| Feature       | GET                             | POST                               |
+| ------------- | ------------------------------- | ---------------------------------- |
+| Data location | Appended to URL as query string | Sent in request body               |
+| Visibility    | Visible in browser URL          | Not visible                        |
+| Security      | Less secure                     | More secure                        |
+| Data size     | Limited (~2048 chars)           | No practical limit                 |
+| Use case      | Search, filtering               | Login, file upload, sensitive data |
 
 ---
 
 **Q18. What are all the input types available in HTML5?**
 
 **Answer:**
+
 ```html
-<input type="text" />           <!-- Text field -->
-<input type="password" />       <!-- Password (masked) -->
-<input type="email" />          <!-- Email validation built-in -->
-<input type="number" />         <!-- Numeric input -->
-<input type="tel" />            <!-- Telephone number -->
-<input type="url" />            <!-- URL validation -->
-<input type="date" />           <!-- Date picker -->
-<input type="time" />           <!-- Time picker -->
-<input type="datetime-local" /> <!-- Date and time -->
-<input type="month" />          <!-- Month picker -->
-<input type="week" />           <!-- Week picker -->
-<input type="range" />          <!-- Slider -->
-<input type="color" />          <!-- Color picker -->
-<input type="checkbox" />       <!-- Checkbox -->
-<input type="radio" />          <!-- Radio button -->
-<input type="file" />           <!-- File upload -->
-<input type="search" />         <!-- Search field -->
-<input type="submit" />         <!-- Submit button -->
-<input type="reset" />          <!-- Reset button -->
-<input type="button" />         <!-- Generic button -->
-<input type="hidden" />         <!-- Hidden field -->
-<input type="image" />          <!-- Image as submit button -->
+<input type="text" />
+<!-- Text field -->
+<input type="password" />
+<!-- Password (masked) -->
+<input type="email" />
+<!-- Email validation built-in -->
+<input type="number" />
+<!-- Numeric input -->
+<input type="tel" />
+<!-- Telephone number -->
+<input type="url" />
+<!-- URL validation -->
+<input type="date" />
+<!-- Date picker -->
+<input type="time" />
+<!-- Time picker -->
+<input type="datetime-local" />
+<!-- Date and time -->
+<input type="month" />
+<!-- Month picker -->
+<input type="week" />
+<!-- Week picker -->
+<input type="range" />
+<!-- Slider -->
+<input type="color" />
+<!-- Color picker -->
+<input type="checkbox" />
+<!-- Checkbox -->
+<input type="radio" />
+<!-- Radio button -->
+<input type="file" />
+<!-- File upload -->
+<input type="search" />
+<!-- Search field -->
+<input type="submit" />
+<!-- Submit button -->
+<input type="reset" />
+<!-- Reset button -->
+<input type="button" />
+<!-- Generic button -->
+<input type="hidden" />
+<!-- Hidden field -->
+<input type="image" />
+<!-- Image as submit button -->
 ```
 
 ---
@@ -386,6 +414,7 @@ Semantic HTML uses elements that have **meaningful names** that describe their p
 **Q20. What are HTML5 form validation attributes?**
 
 **Answer:**
+
 ```html
 <input type="text"
   required                   <!-- Field must be filled -->
@@ -407,12 +436,12 @@ Semantic HTML uses elements that have **meaningful names** that describe their p
 
 **Answer:**
 
-| Feature | `disabled` | `readonly` |
-|---------|-----------|----------|
-| User can type | ❌ No | ❌ No |
-| Focusable | ❌ No | ✅ Yes |
-| Submitted with form | ❌ No | ✅ Yes |
-| CSS styling | Grayed out | Normal |
+| Feature             | `disabled` | `readonly` |
+| ------------------- | ---------- | ---------- |
+| User can type       | ❌ No      | ❌ No      |
+| Focusable           | ❌ No      | ✅ Yes     |
+| Submitted with form | ❌ No      | ✅ Yes     |
+| CSS styling         | Grayed out | Normal     |
 
 ---
 
@@ -424,22 +453,22 @@ Semantic HTML uses elements that have **meaningful names** that describe their p
 
 **Answer:**
 
-| Feature | `localStorage` | `sessionStorage` |
-|---------|---------------|-----------------|
-| Persistence | Until manually cleared | Until tab is closed |
-| Scope | Same origin, all tabs | Same tab only |
-| Storage limit | ~5–10MB | ~5MB |
+| Feature       | `localStorage`         | `sessionStorage`    |
+| ------------- | ---------------------- | ------------------- |
+| Persistence   | Until manually cleared | Until tab is closed |
+| Scope         | Same origin, all tabs  | Same tab only       |
+| Storage limit | ~5–10MB                | ~5MB                |
 
 ```javascript
 // localStorage
-localStorage.setItem('user', 'John');
-localStorage.getItem('user');  // "John"
-localStorage.removeItem('user');
+localStorage.setItem("user", "John");
+localStorage.getItem("user"); // "John"
+localStorage.removeItem("user");
 localStorage.clear();
 
 // sessionStorage
-sessionStorage.setItem('token', 'abc123');
-sessionStorage.getItem('token');
+sessionStorage.setItem("token", "abc123");
+sessionStorage.getItem("token");
 ```
 
 ---
@@ -448,6 +477,7 @@ sessionStorage.getItem('token');
 
 **Answer:**
 `<canvas>` provides a **bitmap drawing surface** controlled by JavaScript. Used for:
+
 - 2D/3D graphics and animations
 - Games
 - Data visualizations
@@ -457,9 +487,9 @@ sessionStorage.getItem('token');
 <canvas id="myCanvas" width="400" height="200"></canvas>
 
 <script>
-  const canvas = document.getElementById('myCanvas');
-  const ctx = canvas.getContext('2d');
-  ctx.fillStyle = 'blue';
+  const canvas = document.getElementById("myCanvas");
+  const ctx = canvas.getContext("2d");
+  ctx.fillStyle = "blue";
   ctx.fillRect(10, 10, 150, 100);
 </script>
 ```
@@ -475,12 +505,12 @@ The Geolocation API allows websites to access the user's **geographical location
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
     (position) => {
-      console.log('Lat:', position.coords.latitude);
-      console.log('Lng:', position.coords.longitude);
+      console.log("Lat:", position.coords.latitude);
+      console.log("Lng:", position.coords.longitude);
     },
     (error) => {
-      console.error('Error:', error.message);
-    }
+      console.error("Error:", error.message);
+    },
   );
 }
 ```
@@ -499,8 +529,8 @@ Custom `data-*` attributes allow you to store **extra information** on HTML elem
 
 <script>
   function handleClick(el) {
-    console.log(el.dataset.userId);  // "42"
-    console.log(el.dataset.role);    // "admin"
+    console.log(el.dataset.userId); // "42"
+    console.log(el.dataset.role); // "admin"
   }
 </script>
 ```
@@ -521,9 +551,9 @@ Custom `data-*` attributes allow you to store **extra information** on HTML elem
 </template>
 
 <script>
-  const template = document.getElementById('card-template');
+  const template = document.getElementById("card-template");
   const clone = template.content.cloneNode(true);
-  clone.querySelector('.card-title').textContent = 'Hello!';
+  clone.querySelector(".card-title").textContent = "Hello!";
   document.body.appendChild(clone);
 </script>
 ```
@@ -534,12 +564,12 @@ Custom `data-*` attributes allow you to store **extra information** on HTML elem
 
 **Answer:**
 
-| | `<script>` | `<script async>` | `<script defer>` |
-|--|-----------|-----------------|-----------------|
-| Parsing paused | ✅ Yes | ✅ While executing | ❌ No |
-| Execution timing | Immediately | As soon as downloaded | After HTML parsed |
-| Order guaranteed | ✅ Yes | ❌ No | ✅ Yes |
-| Use case | Critical scripts | Analytics, ads | General scripts |
+|                  | `<script>`       | `<script async>`      | `<script defer>`  |
+| ---------------- | ---------------- | --------------------- | ----------------- |
+| Parsing paused   | ✅ Yes           | ✅ While executing    | ❌ No             |
+| Execution timing | Immediately      | As soon as downloaded | After HTML parsed |
+| Order guaranteed | ✅ Yes           | ❌ No                 | ✅ Yes            |
+| Use case         | Critical scripts | Analytics, ads        | General scripts   |
 
 ```html
 <!-- Blocks parsing -->
@@ -560,6 +590,7 @@ Custom `data-*` attributes allow you to store **extra information** on HTML elem
 The **Shadow DOM** is a browser API that attaches a hidden, isolated DOM tree to an element — styles and scripts inside do not affect the main document.
 
 **Web Components** are made of:
+
 1. **Custom Elements** – define new HTML elements
 2. **Shadow DOM** – encapsulated styles/markup
 3. **HTML Templates** – reusable markup
@@ -568,15 +599,16 @@ The **Shadow DOM** is a browser API that attaches a hidden, isolated DOM tree to
 class MyCard extends HTMLElement {
   constructor() {
     super();
-    const shadow = this.attachShadow({ mode: 'open' });
+    const shadow = this.attachShadow({ mode: "open" });
     shadow.innerHTML = `
       <style>p { color: red; }</style>
       <p>Shadow DOM content</p>
     `;
   }
 }
-customElements.define('my-card', MyCard);
+customElements.define("my-card", MyCard);
 ```
+
 ```html
 <my-card></my-card>
 ```
@@ -619,18 +651,19 @@ customElements.define('my-card', MyCard);
 **Answer:**
 **WCAG (Web Content Accessibility Guidelines)** are standards for making web content accessible. The 4 core principles are **POUR**:
 
-| Principle | Meaning |
-|-----------|---------|
-| **P**erceivable | Information must be presentable in ways users can perceive (alt text, captions) |
-| **O**perable | Interface must be navigable (keyboard accessible, no seizure-inducing content) |
-| **U**nderstandable | Content must be readable and predictable (clear language, error handling) |
-| **R**obust | Content must be interpreted by assistive technologies |
+| Principle          | Meaning                                                                         |
+| ------------------ | ------------------------------------------------------------------------------- |
+| **P**erceivable    | Information must be presentable in ways users can perceive (alt text, captions) |
+| **O**perable       | Interface must be navigable (keyboard accessible, no seizure-inducing content)  |
+| **U**nderstandable | Content must be readable and predictable (clear language, error handling)       |
+| **R**obust         | Content must be interpreted by assistive technologies                           |
 
 ---
 
 **Q31. How do you make a website keyboard accessible?**
 
 **Answer:**
+
 - Use **semantic HTML** (buttons, links, form elements are natively focusable)
 - Ensure logical **tab order** (`tabindex`)
 - Provide **visible focus indicators** (`:focus` styles)
@@ -651,11 +684,11 @@ customElements.define('my-card', MyCard);
 
 **Answer:**
 
-| Feature | `<link>` | `<a>` |
-|---------|---------|-------|
-| Location | Inside `<head>` | Inside `<body>` |
-| Purpose | Link external resources (CSS, favicons) | Hyperlinks for navigation |
-| User visible | ❌ No | ✅ Yes |
+| Feature      | `<link>`                                | `<a>`                     |
+| ------------ | --------------------------------------- | ------------------------- |
+| Location     | Inside `<head>`                         | Inside `<body>`           |
+| Purpose      | Link external resources (CSS, favicons) | Hyperlinks for navigation |
+| User visible | ❌ No                                   | ✅ Yes                    |
 
 ```html
 <!-- <link> for external resources -->
@@ -688,11 +721,11 @@ Without it, mobile browsers zoom out to fit the desktop layout, making text tiny
 
 **Answer:**
 
-| Feature | `<head>` | `<body>` |
-|---------|---------|---------|
-| Visibility | Not rendered on page | Visible to users |
-| Contains | Metadata, CSS links, title, scripts | Actual page content |
-| Purpose | Document configuration | Page presentation |
+| Feature    | `<head>`                            | `<body>`            |
+| ---------- | ----------------------------------- | ------------------- |
+| Visibility | Not rendered on page                | Visible to users    |
+| Contains   | Metadata, CSS links, title, scripts | Actual page content |
+| Purpose    | Document configuration              | Page presentation   |
 
 ---
 
@@ -713,14 +746,17 @@ Without it, mobile browsers zoom out to fit the desktop layout, making text tiny
 ```
 
 **Security Concerns:**
+
 - **Clickjacking** — attacker embeds your site in an iframe to trick users
 - **XSS attacks** — malicious iframes injecting scripts
 
 **Mitigations:**
+
 ```html
 <!-- Sandbox restricts iframe capabilities -->
 <iframe src="content.html" sandbox="allow-scripts allow-same-origin"></iframe>
 ```
+
 ```http
 <!-- Prevent your site from being embedded -->
 X-Frame-Options: DENY
@@ -777,8 +813,8 @@ Creates a **native disclosure widget** (accordion) without JavaScript.
 <details>
   <summary>What is HTML?</summary>
   <p>
-    HTML stands for HyperText Markup Language and is the standard
-    language for creating web pages.
+    HTML stands for HyperText Markup Language and is the standard language for
+    creating web pages.
   </p>
 </details>
 ```
@@ -797,6 +833,7 @@ The **Critical Rendering Path** is the sequence of steps the browser takes to co
 5. **Paint** → Draw pixels to screen
 
 **Optimization Tips:**
+
 - Place CSS in `<head>` (render-blocking but needed early)
 - Place `<script>` at bottom or use `defer`/`async`
 - Minimize render-blocking resources
@@ -809,6 +846,7 @@ The **Critical Rendering Path** is the sequence of steps the browser takes to co
 **Answer:**
 
 ✅ **Do:**
+
 - Use semantic elements (`<header>`, `<nav>`, `<main>`, etc.)
 - Always include `alt` text on images
 - Use lowercase for tags and attributes
@@ -818,6 +856,7 @@ The **Critical Rendering Path** is the sequence of steps the browser takes to co
 - Validate HTML with [W3C Validator](https://validator.w3.org/)
 
 ❌ **Avoid:**
+
 - Using `<div>` and `<span>` for everything
 - Inline styles (use CSS classes instead)
 - Deprecated tags (`<font>`, `<center>`, `<marquee>`)
@@ -828,32 +867,32 @@ The **Critical Rendering Path** is the sequence of steps the browser takes to co
 
 ## 🎯 Quick Revision Cheatsheet
 
-| Concept | Key Points |
-|---------|-----------|
-| **DOCTYPE** | Tells browser HTML version; prevents quirks mode |
-| **Semantic HTML** | Meaningful tags → better SEO + accessibility |
-| **Block vs Inline** | Block = full width; Inline = content width |
-| **id vs class** | id = unique; class = reusable |
-| **GET vs POST** | GET = URL params; POST = request body |
-| **defer vs async** | defer = ordered, after DOM; async = unordered, ASAP |
-| **localStorage** | Persists until cleared; sessionStorage = tab only |
-| **ARIA** | Accessibility attributes for dynamic content |
-| **lazy loading** | `loading="lazy"` on `<img>` and `<iframe>` |
-| **Shadow DOM** | Encapsulated DOM for Web Components |
+| Concept             | Key Points                                          |
+| ------------------- | --------------------------------------------------- |
+| **DOCTYPE**         | Tells browser HTML version; prevents quirks mode    |
+| **Semantic HTML**   | Meaningful tags → better SEO + accessibility        |
+| **Block vs Inline** | Block = full width; Inline = content width          |
+| **id vs class**     | id = unique; class = reusable                       |
+| **GET vs POST**     | GET = URL params; POST = request body               |
+| **defer vs async**  | defer = ordered, after DOM; async = unordered, ASAP |
+| **localStorage**    | Persists until cleared; sessionStorage = tab only   |
+| **ARIA**            | Accessibility attributes for dynamic content        |
+| **lazy loading**    | `loading="lazy"` on `<img>` and `<iframe>`          |
+| **Shadow DOM**      | Encapsulated DOM for Web Components                 |
 
 ---
 
 ## 📌 Coming Next
 
-| Topic | Status |
-|-------|--------|
-| 🎨 CSS Interview Questions | 🔜 Coming Soon |
+| Topic                             | Status         |
+| --------------------------------- | -------------- |
+| 🎨 CSS Interview Questions        | 🔜 Coming Soon |
 | ⚡ JavaScript Interview Questions | 🔜 Coming Soon |
-| ⚛️ React Interview Questions | 🔜 Coming Soon |
-| 🟢 Node.js Interview Questions | 🔜 Coming Soon |
-| 🗄️ Database (SQL + NoSQL) | 🔜 Coming Soon |
-| 🏗️ System Design | 🔜 Coming Soon |
-| 🤖 AI/ML for Engineers | 🔜 Coming Soon |
+| ⚛️ React Interview Questions      | 🔜 Coming Soon |
+| 🟢 Node.js Interview Questions    | 🔜 Coming Soon |
+| 🗄️ Database (SQL + NoSQL)         | 🔜 Coming Soon |
+| 🏗️ System Design                  | 🔜 Coming Soon |
+| 🤖 AI/ML for Engineers            | 🔜 Coming Soon |
 
 ---
 
